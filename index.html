@@ -54,6 +54,15 @@
                 <li class="nav-item">
                   <a href="/" class="nav-link route-link">Home</a>
                 </li>
+                <li class="nav-item">
+                  <a href="https://docs.cyberark.com/Product-Doc/OnlineHelp/AAM-DAP/Latest/en/Content/OIDC/OIDC.htm" class="nav-link route-link">authn-oidc Docs</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://cyberark.com" class="nav-link route-link">CyberArk</a>
+                </li>
+                <li class="nav-item">
+                  <a href="https://conjur.org" class="nav-link route-link">Conjur Open Source</a>
+                </li>
               </ul>
               <ul class="navbar-nav d-none d-md-block">
                 <!-- Login button: show if NOT authenticated -->
@@ -91,6 +100,12 @@
                       class="dropdown-item dropdown-profile route-link"
                     >
                       <i class="fas fa-user mr-3"></i> Profile
+                    </a>
+                    <a
+                      href="/conjur"
+                      class="dropdown-item dropdown-profile route-link"
+                    >
+                      <i class="fas fa-key"></i> Conjur Demo
                     </a>
                     <a
                       href="#"
@@ -138,7 +153,10 @@
                   <i class="fas fa-user mr-3"></i>
                   <a href="/profile" class="route-link">Profile</a>
                 </li>
-
+                <li>
+                  <i class="fas fa-key mr-3"></i>
+                  <a href="/conjur" class="route-link">Conjur Demo</a>
+                </li>
                 <li>
                   <i class="fas fa-power-off mr-3"></i>
                   <a href="#" id="qsLogoutBtn" onclick="logout()">Log out</a>
