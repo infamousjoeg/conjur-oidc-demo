@@ -1,4 +1,4 @@
-# Sample 01 - Login
+# Conjur OIDC Demo
 
 The purpose of this article is to demonstrate how simple it is to set up and use the new Single Page Application SDK, and authenticate a user in your application using Auth0's Universal Login Page.
 
