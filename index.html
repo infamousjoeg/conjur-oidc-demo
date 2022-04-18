@@ -102,8 +102,10 @@
                       <i class="fas fa-user mr-3"></i> Profile
                     </a>
                     <a
-                      href="/conjur"
-                      class="dropdown-item dropdown-profile route-link"
+                      href="#"
+                      class="dropdown-item"
+                      id="qsConjurBtn"
+                      onclick="conjurOIDC()"
                     >
                       <i class="fas fa-key"></i> Conjur Demo
                     </a>
@@ -155,7 +157,7 @@
                 </li>
                 <li>
                   <i class="fas fa-key mr-3"></i>
-                  <a href="/conjur" class="route-link">Conjur Demo</a>
+                  <a href="#" id="qsConjurBtn" onclick="conjurOIDC()">Conjur Demo</a>
                 </li>
                 <li>
                   <i class="fas fa-power-off mr-3"></i>

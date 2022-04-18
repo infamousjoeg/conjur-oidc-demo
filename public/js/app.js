@@ -22,6 +22,34 @@ const login = async (targetUrl) => {
   }
 };
 
+const conjurOIDC = async () => {
+  try {
+    const isAuthenticated = await auth0.isAuthenticated();
+
+    if (isAuthenticated) {
+      const user = await auth0.getUser();
+      const token = await auth0.getTokenSilently();
+      const claims = await auth0.getIdTokenClaims();
+      const profileData = document.getElementById("profile-data").innerText = JSON.stringify(
+        user,
+        null,
+        2
+      );
+      const claimsData = document.getElementById("profile-data").innerText = JSON.stringify(
+        claims,
+        null,
+        2
+      );
+
+      confirm("The user's profile data is:\n\n" + profileData);
+      confirm("The user's token is:\n\n" + token);
+      confirm("The user's ID token claims are:\n\n" + claimsData);
+    }
+  } catch (err) {
+    console.log("Conjur OIDC Demo failed", err);
+  }
+};
+
 /**
  * Executes the logout flow
  */
