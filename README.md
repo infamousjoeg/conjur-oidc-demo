@@ -1,6 +1,17 @@
-# Conjur OIDC Demo
+# Conjur OIDC Demo <!-- omit in toc -->
 
 The purpose of this article is to demonstrate how simple it is to set up and use the new Single Page Application SDK, and authenticate a user in your application using Auth0's Universal Login Page.
+
+- [Running the Sample Application](#running-the-sample-application)
+  - [Specifying Auth0 Credentials](#specifying-auth0-credentials)
+  - [Installation](#installation)
+  - [Running the Application](#running-the-application)
+- [Frequently Asked Questions](#frequently-asked-questions)
+- [What is Auth0?](#what-is-auth0)
+- [Create a free Auth0 account](#create-a-free-auth0-account)
+- [Issue Reporting](#issue-reporting)
+- [Author](#author)
+- [License](#license)
 
 ## Running the Sample Application
 

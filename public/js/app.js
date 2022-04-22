@@ -30,6 +30,7 @@ const conjurOIDC = async () => {
       const user = await auth0.getUser();
       const token = await auth0.getTokenSilently();
       const claims = await auth0.getIdTokenClaims();
+      const id_token = claims.__raw;
       const profileData = document.getElementById("profile-data").innerText = JSON.stringify(
         user,
         null,
@@ -44,6 +45,7 @@ const conjurOIDC = async () => {
       confirm("The user's profile data is:\n\n" + profileData);
       confirm("The user's token is:\n\n" + token);
       confirm("The user's ID token claims are:\n\n" + claimsData);
+      confirm("The user's JWT for Conjur is:\n\n" + id_token);
     }
   } catch (err) {
     console.log("Conjur OIDC Demo failed", err);
